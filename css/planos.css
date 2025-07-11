@@ -1,0 +1,270 @@
+.ul-planos {
+  padding: 0px;
+  margin: 0px;
+}
+
+.ul-li img {
+  width: 20px;
+}
+
+.ul-li p {
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px 4px;
+}
+
+.ul-li {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  place-content: center;
+  place-items: center;
+  border-bottom: 3px solid #f3f5ff;
+}
+
+.planos-itens {
+  display: flex;
+  padding: 0px 50px 100px;
+  gap: 20px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.tplanos h1 {
+  /* text-align: center; */
+  font-size: 50px;
+  color: rgb(0, 0, 0, 1);
+  padding: 50px;
+  margin: 0px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  position: relative;
+  place-content: center;
+}
+
+.tplanos h1::before {
+  content: "NOSSOS PLANOS";
+  display: block;
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 90px;
+  position: absolute;
+}
+
+.itemdoplanos {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-self: center;
+  background: #ffffff;
+  padding: 50px 20px 50px 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2); /* Adiciona sombra nas bordas */
+  flex: 1;
+}
+
+.itemdoplanos h2 {
+  font-size: 40px;
+  margin: 0px;
+}
+
+.mensal {
+  font-size: 20px;
+  font-weight: 700;
+  background: #17aa80;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 7px;
+  color: #ffffff;
+}
+.tmensal {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.deprecoplano {
+  color: red;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: line-through;
+}
+
+.planos {
+  background-color: #f0f2f5;
+}
+
+.porapenas {
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+  color: #059772;
+  line-height: 1;
+}
+
+.precoplano {
+  font-weight: 600;
+  text-align: center;
+  font-size: 45px;
+  color: #000000;
+}
+
+.precoplano span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* .precoplano span {
+  background-color: #f3f5ff;
+  box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.2);
+} */
+
+.planobtt {
+  display: flex;
+  place-content: center;
+}
+
+.planobtt a {
+  padding: 10px;
+}
+
+.tdoplano h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.toferta {
+  text-align: center;
+}
+
+.toferta h2 {
+  font-size: 50px;
+  color: #17aa80;
+  font-weight: 700;
+}
+
+.finaloferta {
+  /* padding-top: 10px; */
+  padding-bottom: 20px;
+}
+
+.finalbtt {
+  font-weight: 700;
+  text-decoration: none;
+  background: #17aa80;
+  color: #ffffff;
+  padding: 15px 15px;
+  border-radius: 50px;
+  font-size: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); /* Adiciona sombra nas bordas */
+}
+
+.finalbtt:hover {
+  background-color: #026d52;
+}
+
+.finalbtt:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.09);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 800px) {
+  .tplanos h1 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0, 1);
+    padding: 50px;
+    margin: 0px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .itemdoplanos {
+    margin-bottom: 10px;
+  }
+
+  .tplanos h1::before {
+    content: "NOSSOS PLANOS";
+    display: block;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 400px) {
+  .planobtt a {
+    animation: pulseAnimation 2s infinite;
+  }
+
+  @keyframes pulseAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .itemdoplanos {
+    margin-bottom: 15px;
+  }
+
+  .planos-itens {
+    gap: 50px;
+  }
+  .tplanos h1 {
+    font-size: 35px;
+  }
+  .toferta h2 {
+    font-size: 30px;
+  }
+  .tdoplano h2 {
+    font-size: 35px;
+  }
+  .mensal {
+    font-size: 15px;
+    font-weight: 700;
+    background: #17aa80;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 7px;
+    color: #ffffff;
+  }
+  .precoplano {
+    font-size: 35px;
+  }
+  .ul-li p {
+    font-size: 14px;
+  }
+  .planobtt a {
+    font-size: 15px;
+    padding: 13px 10px;
+  }
+  .planobtt {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,133 @@
+.topo {
+  width: 100%;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 20px;
+  display: flex;
+  background: #ffffff;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  gap: 20px;
+  border-bottom: 1px solid rgba(221, 219, 219, 0.945);
+  box-sizing: border-box;
+  z-index: 1000;
+  place-content: center;
+}
+
+.item-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.item-menu li {
+  list-style: none;
+}
+
+.logo {
+  height: 65px;
+  margin-left: 22px;
+  place-items: center;
+  align-items: center;
+}
+
+.topo a {
+  font-family: Arial Narrow;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: rgb(0, 0, 0, 0.7);
+  /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); Adicione uma sombra */
+  transition: box-shadow 0.3s ease-in-out; /* Adicione uma transição suave */
+}
+
+.topo a:hover {
+  color: #fff;
+  position: relative;
+  border-bottom: 1px solid;
+  background-color: #17aa80;
+}
+/* 
+.topo a:active {
+  background-color: #026d52;
+} */
+
+.teste a {
+  color: #ffffff !important;
+  background: #17aa80;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.teste a:hover {
+  background-color: #026d52;
+}
+
+/* .teste:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.09);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+@media (max-width: 400px) {
+  .logo {
+    height: 35px;
+    margin-left: 1px;
+    place-items: start;
+    align-items: start;
+  }
+  .topo {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .topo a {
+    font-size: 12px;
+  }
+
+  .item-menu {
+    display: none;
+  }
+  .teste a {
+    font-size: 10px;
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 330px) {
+  .logo {
+    height: 25px;
+  }
+  .topo {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .topo a {
+    font-size: 10px;
+  }
+
+  .item-menu {
+    display: none;
+  }
+  .teste a {
+    font-size: 10px;
+    padding: 8px 8px;
+  }
+}

@@ -1,0 +1,204 @@
+.rodapegeral {
+  display: flex;
+  padding: 25px;
+  background-color: #17aa80;
+}
+
+.rodape {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+}
+
+.rodape-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  place-content: center;
+}
+
+.rodape-logo img {
+  max-width: 300px;
+}
+
+.rodape-logo {
+  place-self: center;
+  align-items: center;
+}
+
+.rodape-acesso {
+  display: flex;
+}
+
+.rodape-acesso h2 {
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.rodape-list {
+  display: flex;
+  flex: 1;
+}
+
+.rodape-list img {
+  width: 20px;
+}
+
+.rodape-list a {
+  text-decoration: none;
+  padding: 7px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.rodape-list li:hover {
+  background-color: #026d52;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.rodape-list li {
+  display: flex;
+  /* list-style: none; */
+}
+
+.rodape-list ul {
+  margin: 0pxpx;
+  padding: 0px;
+}
+
+.rodape-contato {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rodape-contato h2 {
+  margin-bottom: 0px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.rodape-contato h3 {
+  margin: 0px;
+  font-size: 25px;
+}
+
+.rodape-contato img {
+  max-width: 30px;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.info-contato {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  place-content: center;
+}
+
+.info-contato h3 {
+  line-height: 0.5;
+}
+
+.area-cliente a {
+  background-color: #026d52;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-align: center;
+  flex: 1;
+}
+
+.area-cliente {
+  display: flex;
+  padding: 5px;
+}
+
+.area-cliente a:hover {
+  color: #fff;
+  background-color: #026d52;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.contato-whatsapp {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+}
+
+.rodape-acesso {
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape-final {
+  display: flex;
+  background-color: #026d52;
+  place-content: center;
+}
+
+.rodape-final h2 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media (max-width: 400px) {
+  .area-cliente a {
+    animation: pulseAnimation 2s infinite;
+  }
+
+  @keyframes pulseAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+.rodape-final h2 {
+  font-size: 15px;
+  text-align: center;
+}
+.rodape-logo img {
+  max-width: 200px;
+}
+.rodape-info h2 {
+  font-size: 23px;
+}
+.rodape-info a {
+  font-size: 15px;
+}
+.area-cliente a {
+  padding: 10px 10px;
+  font-size: 12px;
+}

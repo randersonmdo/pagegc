@@ -1,0 +1,93 @@
+.faq-title h1 {
+  font-size: 40px;
+  color: rgb(0, 0, 0, 1);
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.faq-title h1::before {
+  content: "DUVIDAS";
+  color: rgb(0, 0, 0, 0.1);
+  font-size: 80px;
+  position: absolute;
+}
+
+.faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f2f5;
+  padding-bottom: 100px;
+}
+
+.faq-details {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+
+.faq-details summary {
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.8);
+  font-size: 21px;
+  padding: 20px 20px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.faq-details summary:hover {
+  color: #17aa80;
+}
+
+.faq-details p {
+  font-size: 18px;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+details:hover {
+  border-left: 2px solid #17aa80;
+}
+
+@media (max-width: 800px) {
+  .faq-title h1 {
+    font-size: 25px;
+    color: rgb(0, 0, 0, 1);
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .faq-title h1::before {
+    content: "DUVIDAS";
+    color: rgb(0, 0, 0, 0.1);
+    font-size: 35px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 400px) {
+  .faq-title h1 {
+    font-size: 30px;
+  }
+
+  .faq-details summary {
+    font-size: 19px;
+  }
+
+  .faq-details p {
+    font-size: 15px;
+  }
+  /* Estilizando o realce de foco */
+  details:focus,
+  summary:focus {
+    outline: none; /* Remove o realce padrão */
+    border-left: 2px solid #17aa80; /* Adicione uma borda personalizada ou defina o estilo desejado */
+  }
+}

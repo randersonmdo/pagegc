@@ -1,0 +1,112 @@
+.cfinfo img {
+  width: 100px;
+  padding-bottom: 20px;
+}
+
+.cfinfo ul {
+  background: #17aa80;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.6); /* Adiciona sombra nas bordas */
+  list-style: none;
+  border-radius: 30px;
+  padding: 35px;
+  display: flex;
+  flex: 1;
+}
+
+.cfinfo h3,
+.cfp {
+  text-align: center;
+  color: #ffffff;
+  margin: 5px;
+}
+
+.cfinfo h3 {
+  font-size: 25px;
+}
+
+.cfinfo li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  flex: 1;
+}
+
+.titulocomofunciona h2 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(0, 0, 0, 1);
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulocomofunciona h2::before {
+  content: "COMO FUNCIONA";
+  color: rgba(0, 0, 0, 0.2);
+  display: block;
+  position: absolute;
+  font-size: 90px;
+}
+
+.abacf {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px 25px 25px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.cfinfo {
+  margin: 20px;
+  display: flex;
+  gap: 60px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.divlu {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex: 1;
+}
+
+@media (max-width: 800px) {
+  .titulocomofunciona h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0, 1);
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulocomofunciona h2::before {
+    content: "COMO FUNCIONA";
+    color: rgba(0, 0, 0, 0.2);
+    display: block;
+    position: absolute;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tcf {
+    font-size: 30px;
+  }
+  .cfinfo img {
+    width: 60px;
+  }
+  .cfinfo h3 {
+    font-size: 20px;
+  }
+  .cfp {
+    font-size: 13px;
+  }
+}

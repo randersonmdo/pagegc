@@ -1,0 +1,27 @@
+[data-anime] {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+[data-anime="esquerda"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="centro"] {
+  transform: translate3d(0, 50px, 0);
+}
+
+[data-anime="direita"] {
+  transform: translate3d(0, 0, -50px);
+}
+
+[data-anime="zom"] {
+  transform: scale(0.5) translate3d(0, 20px, 0);
+  transition: transform 0.1s ease; /* Adicionando uma transição suave para o efeito */
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transition: 0.2s;
+  transform: translate3d(0px, 0px, 0px);
+}

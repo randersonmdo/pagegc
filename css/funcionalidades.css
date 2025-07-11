@@ -1,0 +1,153 @@
+.tfuncionalidade h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(0, 0, 0, 1);
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.tfuncionalidade h1::before {
+  content: "FUNCIONALIDADES";
+  display: block;
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 90px;
+  position: absolute;
+}
+
+.imgdasection img {
+  max-width: 90px;
+}
+
+.infodasection {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgdasection {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemdasection {
+  display: flex;
+}
+
+.itemdasection h2 {
+  margin: 0;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.itemdasection p {
+  color: rgb(0, 0, 0, 0.7);
+  font-size: 18px;
+}
+.section-itens {
+  display: flex;
+  flex: 1;
+  background-color: #f0f2f5;
+  padding: 22px 22px 22px 22px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 25px;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra nas bordas */
+}
+
+.descricaodestaque {
+  box-shadow: 1px 1px 2px #dee0eb; /* Adiciona sombra nas bordas */
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.abafuncionalidade {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 20px;
+}
+
+@media (max-width: 800px) {
+  .tfuncionalidade h1 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0, 1);
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tfuncionalidade h1::before {
+    content: "FUNCIONALIDADES";
+    display: block;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 400px) {
+  .tfuncionalidade h1 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0, 1);
+    text-transform: uppercase;
+  }
+
+  .imgdasection img {
+    max-width: 60px;
+  }
+
+  .infodasection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgdasection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .itemdasection {
+    display: flex;
+  }
+
+  .itemdasection h2 {
+    margin: 0;
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 20px;
+  }
+
+  .itemdasection p {
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 17px;
+  }
+  .section-itens {
+    display: flex;
+    flex: 1;
+    background-color: #f0f2f5;
+    padding: 22px 22px 22px 22px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 25px;
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra nas bordas */
+  }
+
+  .descricaodestaque {
+    box-shadow: 1px 1px 2px #dee0eb; /* Adiciona sombra nas bordas */
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .abafuncionalidade {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 20px;
+  }
+}

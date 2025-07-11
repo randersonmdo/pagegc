@@ -1,0 +1,196 @@
+@import url(/css/rodape.css);
+
+html,
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.obrigado-topo h1 {
+  font-size: 25px;
+  margin-left: 0px;
+  max-width: 100%;
+  color: #ffff;
+  text-align: center;
+  background-color: #17aa80;
+  padding: 10px;
+}
+
+.obrigado-topo h2 {
+  font-size: 22px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  max-width: 100%;
+  color: #ffff;
+  text-align: center;
+  background-color: #17aa80;
+  padding: 10px;
+}
+
+.obrigado-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 50px;
+  gap: 20px;
+}
+
+.info-login-singup {
+  display: flex;
+  background-color: #f0f2f5;
+  flex: 1;
+  padding: 20px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-login-singup img {
+  width: 380px;
+  display: flex;
+}
+
+.obrigado-descricao {
+  align-self: center;
+  flex: 1;
+}
+
+.obrigado-descricao h3 {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.obrigado-descricao a {
+  text-decoration: none;
+  background-color: #17aa80;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  /* box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.obrigado-descricao a:hover {
+  background-color: #026d52;
+
+  /* animation: pulseAnimation 2s infinite;
+}
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  } */
+}
+
+.obrigado-descricao {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+@media (min-width: 501px) {
+  .obrigado-descricao a {
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 500px) {
+  .info-login-singup img {
+    width: 230px;
+    height: 170px;
+  }
+
+  .info-login-singup {
+    margin-bottom: 20px;
+  }
+
+  .obrigado-info {
+    padding: 50px 30px;
+    gap: 100px;
+  }
+
+  .obrigado-topo h1 {
+    font-size: 17px;
+  }
+
+  .obrigado-topo h2 {
+    font-size: 15px;
+  }
+
+  .info-login-singup h3 {
+    font-size: 15px;
+  }
+
+  .obrigado-descricao a {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .obrigado-descricao a {
+    animation: pulseAnimation 2s infinite;
+  }
+
+  @keyframes pulseAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .info-login-singup img {
+    width: 130px;
+    height: 100px;
+  }
+  .info-login-singup {
+    margin-bottom: 20px;
+  }
+
+  .obrigado-topo h1 {
+    font-size: 15px;
+  }
+
+  .obrigado-topo h2 {
+    font-size: 13px;
+  }
+
+  .obrigado-info {
+    padding: 50px 20px;
+  }
+
+  .info-login-singup h3 {
+    font-size: 13px;
+  }
+
+  .obrigado-descricao a {
+    font-size: 10px;
+  }
+
+  .obrigado-descricao a {
+    animation: pulseAnimation 2s infinite;
+  }
+
+  @keyframes pulseAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

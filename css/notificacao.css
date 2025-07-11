@@ -1,0 +1,15 @@
+#notificacoes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #17aa80af;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+  overflow: hidden;
+}
+/* Estilos para cada notificação */
+.notificacao {
+  margin-bottom: 5px;
+}
